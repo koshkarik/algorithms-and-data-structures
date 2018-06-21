@@ -9,6 +9,7 @@ import Queue from '../Data-Structures/Queue/queue';
 import Stack from '../Data-Structures/Stack/stack';
 import BinarySearchTree from '../Data-Structures/BinarySearchTree/binarySearchTree';
 import LinkedList from '../Data-Structures/LinkedList/linkedList';
+import heapSort from '../Sorting-Algorithms/heap-sort';
 
 // Sorting Algorithms
 
@@ -26,6 +27,9 @@ describe('Sorting algorithms', () => {
   });
   it('Quick sort', () => {
     expect(quickSort(toSort)).toEqual(expected);
+  });
+  it('Heap Sort', () => {
+    expect(heapSort(toSort)).toEqual(expected);
   });
 });
 
